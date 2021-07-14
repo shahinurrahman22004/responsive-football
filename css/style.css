@@ -259,6 +259,7 @@ Shop Area Style
 ---------------*/
 .shop-area {
     padding: 20px 0;
+    background-color: #eee;
     background-image: url('/images/pattern-gray-background.png');
     background-repeat: no-repeat;
     background-size: cover;
