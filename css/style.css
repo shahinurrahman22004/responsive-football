@@ -86,7 +86,7 @@ li {
     display: flex;
     padding-top: 150px;
     width: 100%;
-    height: 500px;
+    padding-bottom: 50px;
     background-color: #2D25A0;
 }
 .header-title {
@@ -151,8 +151,7 @@ li {
     border-radius: 5px;
 }
 .player img {
-     width: 285px;
-     height: 245px;
+     width: 100%;
      transition: .3s;
      border-radius: 5px;
 }
@@ -337,4 +336,165 @@ Shop Area Style
     font-size: 20px;
     margin: 0;
     transition: .3s;
+}
+
+
+/*----------------
+Footer area style 
+------------------ */
+
+.footer-area {
+    text-align: center;
+    padding-top: 60px;
+}
+.footer-banner img {
+    width: 40%;
+}
+
+ul.foot {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: -40px;
+}
+ul.foot li a:hover {
+    color: #E02C6D;
+    background-color: gray;
+}
+ul.foot li a {
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #eee;
+    color: gray;
+    transition: .3s;
+    font-size: 18px;
+}
+ul.foot li {
+    padding: 0 5px;
+
+}
+.footer-area p {
+    color: gray;
+}
+
+
+
+
+/*---------------------
+Media Quary Style
+----------------------*/
+
+
+/* Mobile devices */
+
+@media screen and (max-width: 689px) {
+    .menu-area {
+        display: none;
+    }
+    .heading-area {
+        margin-top: 0;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-title{
+        width: 80%;
+        padding-bottom: 30px;
+    } 
+
+    .img-area{
+        width: 80%;
+    }
+    .img-area img {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight-title {
+        width: 80%;
+        padding-bottom: 30px;
+    }
+    .highlight-image{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .gellary-images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .shops {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .shop-me ul {
+        margin-left: -40px;
+        justify-content: center;
+    }
+    .hover-image {
+        display: none;
+    }
+
+}
+
+
+/* Tablet devices */
+@media Only screen and (min-width: 689px) and (max-width: 992px) {
+    .heading-area {
+        margin-top: 0;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-title{
+        width: 80%;
+        padding-bottom: 30px;
+    } 
+
+    .img-area{
+        width: 80%;
+    }
+    .img-area img {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight-title {
+        width: 80%;
+        padding-bottom: 30px;
+    }
+    .highlight-image{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .gellary-images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shops {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .shop-me ul {
+        margin-left: -40px;
+        justify-content: center;
+    }
+    .hover-image {
+        display: none;
+    }
 }
