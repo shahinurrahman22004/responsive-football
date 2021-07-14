@@ -206,3 +206,25 @@ Highlight area style
     width: 100%;
     transition: .3s;
 }
+
+
+
+/*------------------ 
+Gellary Area Style
+--------------------*/
+
+.gellary-area {
+    position: relative;
+    background-image: url(images/gellary/sectin-bg.jpg);
+}
+.gellary-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    position: absolute;
+    top: 0;
+    padding-right: 12%;
+}
+.single-image-item img {
+    width: 100%;
+}
