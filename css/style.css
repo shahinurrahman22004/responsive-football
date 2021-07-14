@@ -244,7 +244,7 @@ Gellary Area Style
     color: #E02C6D;
 }
 .gellary-title h1 {
-    color: #fff;
+    color: #333;
     font-size: 48px;
     transition: .3s;
     cursor: pointer;
