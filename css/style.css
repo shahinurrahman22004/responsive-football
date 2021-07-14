@@ -172,7 +172,7 @@ Highlight area style
 
 .highlights {
     display: flex;
-    margin: 50px 0;
+    margin: 50px 0 70px 0;
 }
 .highlight-title{
     width: 50%;
@@ -215,16 +215,43 @@ Gellary Area Style
 
 .gellary-area {
     position: relative;
-    background-image: url(images/gellary/sectin-bg.jpg);
+}
+img.bg-img-gellary {
+    height: 930px;
+    width: 100%;
 }
 .gellary-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 20px;
     position: absolute;
-    top: 0;
+    top: 15%;
     padding-right: 12%;
 }
+.single-image-item:hover img {
+    transform: scale(1.2);
+}
+.single-image-item {
+    overflow: hidden;
+}
 .single-image-item img {
+    transition: .5s;
     width: 100%;
+    cursor: pointer;
+}
+
+.gellary-title {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    text-align: center;
+}
+.gellary-title h1:hover {
+    color: #E02C6D;
+}
+.gellary-title h1 {
+    color: #fff;
+    font-size: 48px;
+    transition: .3s;
+    cursor: pointer;
 }
